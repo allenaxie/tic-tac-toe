@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+    text-align: center;
+    background: #131313;
+    color: white;
+}
+
+.heading {
+    font-family: Bungee Shade;
+    font-size: 50px;
+}
+
+.board {
+    width: 340px;
+    height: 340px;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin: 25px auto;
+}
+
+.pNameInput {
+    width: 200px;
+}
+
+.gamebox {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    border: 3px  solid;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.hoverCells:hover {
+    background-color:lightseagreen;
+}
+
+.turnMsg {
+    margin: 10px auto;
+    font-size: 20px;
+    background-color:steelblue;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+
+.resetButton {
+    margin: 10px auto 20px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    width: 200px;
+}
+
+.resetButton:hover {
+    background: linear-gradient(#FFD4E8,#BF3FFF);
+}
+
+.winMsg {
+    position: absolute;
+    text-align: center;
+    margin: 130px 500px;
+    width: 400px;
+    background:rgba(68, 68, 68, 0.94);
+    height: 80px;
+    font-size: 30px;
+    padding: 5px 0;
+    display: none;
+}
